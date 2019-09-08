@@ -490,3 +490,12 @@ body{
 }
 
 
+.brittany{
+    color: var(--main-highlight);
+    text-decoration: none;
+}
+
+.brittany:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

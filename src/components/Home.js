@@ -168,7 +168,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="footer-container">
-                    <div>Designed by Brittany Chiang, Developed by Sahil Verma</div><br/>
+                    <div>Designed by <a className="brittany" href="https://www.linkedin.com/in/bchiang7/" >Brittany Chiang</a>, Developed by <a className="brittany" href="https://www.linkedin.com/in/sahil-verma-957130106/" >Sahil Verma</a></div><br/>
                     {/* <div>sahilverma.0922@gmail.com</div> */}
                 </div>
 
