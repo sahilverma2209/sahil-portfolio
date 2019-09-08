@@ -5,11 +5,6 @@ import projects from '../assets/project-list';
 
 class Home extends React.Component {
 
-    constructor(){
-        super()
-
-    }
-
     changeTheme(){
         let root = document.documentElement;
         root.style.setProperty('--main-background', "#280a2f");
@@ -24,7 +19,7 @@ class Home extends React.Component {
                     <div className="project-img">
                         <div className="proj-filter"></div>
                         <div className="proj-design"></div>
-                        <img className="site-img" src={require(`../assets/images/${item.img}.png`)} />
+                        <img className="site-img" src={require(`../assets/images/${item.img}.png`)}  alt="project" />
                     </div>
                     <div className="project-details">
                         <div>
@@ -148,7 +143,7 @@ class Home extends React.Component {
                         <div className="about-right">
                             <div className="my-img">
                                 <div className="img-filter"></div>
-                                <img className="sahil-img" src={require('../assets/images/sahil.jpeg')} />
+                                <img className="sahil-img" src={require('../assets/images/sahil.jpeg')} alt="sahil" />
                                 <div className="extra-frame"></div>
                             </div>
                         </div>
