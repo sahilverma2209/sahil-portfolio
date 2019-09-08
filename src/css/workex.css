@@ -26,16 +26,15 @@
     font-family: SFMono-Regular;
     padding: 20px;
     border-left: 2px solid var(--main-fade-line);
-    margin-left: -2px;
     color: var(--main-fade-text);
 }
 
 .workex-link:hover{cursor: pointer}
 
 .selected{
-    border-left: 2px solid var(--main-highlight);
+    border-left: 3px solid var(--main-highlight);
     color: var(--main-highlight);
-    transition: all 0.6s;
+    transition: all 0.35s;
 }
 
 .workex-right{

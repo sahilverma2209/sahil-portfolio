@@ -73,7 +73,7 @@ class Home extends React.Component {
                 document.documentElement.style.setProperty("--main-super-fade-text", "#ffffff");
                 document.documentElement.style.setProperty("--main-super-fade", "#ac5151");
                 document.documentElement.style.setProperty("--main-fade-line", "#522d2d");
-                document.documentElement.style.setProperty("--main-img-fade", "#9e3b3b50");
+                document.documentElement.style.setProperty("--main-img-fade", "#9e3b3b2c");
                 break;
             
 
