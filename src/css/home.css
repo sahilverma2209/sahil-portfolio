@@ -1,0 +1,472 @@
+
+body{ 
+    margin: unset;
+    background-color: var(--main-background);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    /* border: 1px solid red; */
+    min-height: 100vh;
+}
+
+.nav-container{
+    position: fixed;
+    /* border: 1px solid blue; */
+    height: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: SFMono-Regular;
+    background: var(--main-background);
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    z-index: 3;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-img{
+    color: var(--main-text);
+    padding: 4px 10px;
+    border-radius: 5%;
+    font-size: 25px;
+    border: 1px solid var(--main-text);
+}
+
+.nav-links{
+    display: flex;
+}
+
+.navlink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px;
+    color: var(--main-super-fade);
+}
+
+.navlink-sno{
+    color: var(--main-text)
+}
+
+.navlink-resume{
+    font-size: 15px;
+    border: 1px solid var(--main-text);
+    color: var(--main-text);
+    height: 55%;
+    margin: auto 20px;
+    width: 80px;
+    border-radius: 4px;
+    background: var(--main-background);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+}
+
+.left-text{
+    position: fixed;
+    color: var(--main-super-fade-text);
+    bottom: 0;
+    left: 40px;
+    display: flex;
+    flex-direction: column; 
+}
+.short-line-left{
+    border-color: var(--main-super-fade-text);
+    height: 100px;
+    margin: 0 auto;
+}
+.social-media-link{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.right-text{
+    position: fixed;
+    color: var(--main-super-fade-text);
+    display: flex;
+    bottom: 120px;
+    right: -120px;
+    transform: rotate(90deg);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+}
+
+.short-line-right{
+    border-color: var(--main-super-fade-text);
+    width: 150px;
+    height: 0px;
+    margin-left: 30px;
+}
+
+
+.landing-content-container{
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 150px;
+}
+
+.landing-content{
+    width: 72%;
+    margin: 0 auto;
+}
+
+.hi{
+    color: var(--main-text);
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.name{
+    color: var(--main-super-fade);
+    font-family: Calibre-Semibold;
+    font-size: 80px;
+    margin-top: 15px;
+}
+
+.build{
+    font-family: Calibre-Semibold;
+    font-size: 80px;
+    margin-top: 0px;
+    color: var(--main-super-fade-text);
+}
+
+.bio{
+    font-size: 20px;
+    font-family: Calibre-Light;
+    color: var(--main-super-fade-text);
+    width: 65%;
+}
+
+.get-in-touch{
+    background: var(--main-background);
+    border: 1px solid var(--main-text);
+    border-radius: 4px;
+    color: var(--main-text);
+    padding: 15px;
+    width: 150px;
+    font-size: 14px;
+    font-family: SFMono-Medium;
+    margin-top: 50px;
+}
+
+.about-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0px 150px;
+}
+
+.about-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-desc{
+    /* position: relative; */
+    display: flex;
+    color: var(--main-super-fade);
+    font-size: 32px;
+    font-family: Calibre-Medium;
+}
+
+/* .section-desc::before{ */
+.section-no{
+    content: '01.';
+    margin-right: 10px;
+    font-family: SFMono-Regular;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--main-text);
+}
+
+.section-line{
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 300px;
+    background-color: var(--main-fade-line);
+    position: relative;
+    top: 15px;
+    margin-left: 20px;
+}
+
+.about-left{
+    flex: 1;
+    font-size: 20px;
+    color: var(--main-super-fade-text);
+    font-family: Calibre-Light;
+}
+
+.skills{
+    display: flex;
+}
+
+.skills-left, .skills-right{
+    flex: 1;
+}
+
+.skill-row{
+    display: flex;
+    padding: 7px;
+}
+
+.skill-desc{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7px;
+    font-family: SFMono-Regular;
+}
+
+.color-caret{
+    font-size: 14px;
+    color: var(--main-text);
+    margin-right:10px
+}
+
+
+.about-right{
+    flex: 1;
+    display: flex;
+}
+
+.my-img{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 90px auto;
+    border-radius: 4px;
+}
+
+.my-img:hover{
+    cursor: pointer;
+}
+
+.sahil-img{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 4px;
+    filter: contrast(1.5);
+}
+
+.sahil-img:hover{
+    width: 500px;
+}
+
+.img-filter{
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--main-img-fade);
+    border-radius: 4px;
+}
+
+.img-filter:hover{
+    background: unset;
+    transition: all 0.3s;
+}
+
+.my-img:hover .extra-frame{
+    left: 10px;
+    top: 10px;
+    transition: all 0.3s;
+}
+.my-img:hover .sahil-img{
+    filter: contrast(1);
+    transition: all 0.3s;
+}
+
+.extra-frame{
+    z-index: -1 !important;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 2px solid var(--main-text);
+    border-radius: 4px;
+    height: 300px;
+    width: 300px;
+}
+
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-row{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+
+.project-row:nth-child(2n){
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.project-img{
+    position: relative;
+}
+
+.proj-filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--main-img-fade);
+    z-index: 0;
+}
+
+.proj-design{
+    position: absolute;
+    border-radius: 4px;
+    height: 300px;
+    width: 549px;
+    top: 20px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--main-text);
+    z-index: -1;
+}
+.project-img:hover .proj-design{
+    top: 10px;
+    left: 10px;
+    transition: all 0.5s;
+} 
+
+/* .project-row:nth-child(2n) > .project-img > .proj-design{ 
+    position: absolute;
+    height: 300px;
+    width: 549px;
+    top: 20px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--main-text);
+    z-index: -1;
+}
+.project-row:nth-child(2n):hover > .project-img > .proj-design{ 
+    top: 10px;
+    left: -10px;
+    transition: all 0.5s;
+} */
+
+.project-img:hover .proj-filter{
+    background: unset;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.site-img{
+    height: 300px;
+    width: 549px;
+    border-radius: 4px;
+}
+
+.project-details{
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+.featured{
+    color: var(--main-text);
+    font-size: 13px;
+    font-family: SFMono-Regular;
+    padding: 10px 0px;
+}
+
+.project-name{
+    font-size: 28px;
+    font-family: Calibre-Regular;
+    color: var(--main-super-fade);
+    padding-bottom: 20px;
+}
+
+.project-desc{
+    background: var( --main-background-fade);
+    color: var(--main-super-fade-text);
+    font-family: Calibre-Regular;
+    padding: 25px;
+    font-size: 18px;
+    min-width: 350px;
+    width: 450px;
+    border-radius: 4px;
+}
+
+.project-row:nth-child(2n) > .project-details{
+   text-align: right;
+}
+.project-row:nth-child(2n) > .project-details > div > .project-desc {
+    margin-left: -100px;
+}
+
+.project-tech{
+    display: flex;
+    justify-content: flex-start;
+    font: 13px SFMono-Regular;
+    color: var(--main-super-fade-text);
+}
+
+.project-row:nth-child(2n) > .project-details > div > .project-tech {
+    justify-content: flex-end;
+}
+
+.tech-item{
+    padding: 10px;
+}
+
+
+.footer-container{
+    background:rgb(2, 12, 27);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: SFMono-Regular;
+    color: var(--main-fade-text);
+}
+
+
+
