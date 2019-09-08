@@ -32,17 +32,60 @@
     src: url(./assets/fonts/SFMono/SFMono-Medium.woff2) format('woff2');
 }
 
+/* Orignial Theme ---------------*/
 :root{
     --main-background: #0a192f;
     --main-background-fade: #172a45;
     --main-background-dark: #020c1b;
     --main-highlight: #64ffda;
     --main-fade-text: #606a86;
-    --main-super-fade-text: #8892b0 ;
+    --main-super-fade-text: #8892b0;
     --main-super-fade: #e6f1ff;
     --main-fade-line: #2d3952;
     --main-img-fade: #0ba8848e;
 }
+
+
+/* Purple-pink ------------ */
+/* :root{
+    --main-background: #100a2f;
+    --main-background-fade: #1c1349;
+    --main-background-dark: #020c1b;
+    --main-highlight: #f8acff;
+    --main-fade-text: #ebdeee;
+    --main-super-fade-text: #e4d5e7;
+    --main-super-fade: #c215b9;
+    --main-fade-line: #70337c;
+    --main-img-fade: #871da74f;
+} */
+
+
+/* Blueish-white ------------ */
+/* :root{
+    --main-background: #eeeeee;
+    --main-background-fade: #f5f5f5;
+    --main-background-dark: #d8d8d8;
+    --main-highlight: #10608f;
+    --main-fade-text: #5a606b;
+    --main-super-fade-text: #24323d;
+    --main-super-fade: #285174;
+    --main-fade-line: #909cb3;
+    --main-img-fade: #88aac28f;
+} */
+
+
+/* red ------- */
+/* :root{
+    --main-background: #000000;
+    --main-background-fade: #a33434;
+    --main-background-dark: #240404;
+    --main-highlight: #c74242;
+    --main-fade-text: #b36666;
+    --main-super-fade-text: #ffffff;
+    --main-super-fade: #ac5151;
+    --main-fade-line: #522d2d;
+    --main-img-fade: #9e3b3b50;
+} */
 
 button:focus{
     outline: none;

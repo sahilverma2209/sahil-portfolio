@@ -55,6 +55,47 @@ body{
     color: var(--main-super-fade);
 }
 
+.theme-changer{
+    position: relative;
+}
+
+.theme-btn{
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+.themes-dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: -7.5px;
+    top: 85%;
+    height: 160px;
+    width: 50px;
+    border-radius: 4px;
+    background: var(--main-background-fade);
+    padding-top: 10px;
+}
+
+.themes-dropdown:before{
+    z-index:-1;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: -6px;
+    background:  var(--main-background-fade);
+    transform: rotate(45deg);
+}
+
 .navlink-sno{
     color: var(--main-highlight)
 }
@@ -452,7 +493,7 @@ body{
                         linear-gradient(to right, var(--main-background-fade)  100%, var(--main-background-fade)  100%),
                         linear-gradient(to bottom, var(--main-background-fade)  100%, var(--main-background-fade)  100%);
     background-position: 0% 0%,100% 0,100% 100%,0 100%;
-    background-size: 0% 3px, 3px 0%, 0% 3px, 3px 0%;
+    background-size: 0% 1px, 1px 0%, 0% 1px, 1px 0%;
     
 }
 
@@ -464,8 +505,8 @@ body{
                         linear-gradient(to bottom, var(--main-highlight)  100%, var(--main-highlight)  100%),
                         linear-gradient(to right, var(--main-highlight)  100%, var(--main-highlight)  100%),
                         linear-gradient(to bottom, var(--main-highlight)  100%, var(--main-highlight)  100%);
-    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-    color: var(--main-super-fade);
+    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+    /* color: var(--main-super-fade); */
 }
 
 .project-row:nth-child(2n) > .project-details{

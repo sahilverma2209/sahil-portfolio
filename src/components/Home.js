@@ -5,9 +5,82 @@ import projects from '../assets/project-list';
 
 class Home extends React.Component {
 
-    changeTheme(){
-        let root = document.documentElement;
-        root.style.setProperty('--main-background', "#280a2f");
+    constructor(){
+        super()
+
+        this.state = {
+            themesOpen: false,
+            themes: [
+                { name: 'og', color: 'linear-gradient(to right, #0a192f 70%, #64ffda 100%)'},
+                { name: 'purple', color: 'linear-gradient(to right, #100a2f 70%, #f8acff 100%)'},
+                { name: "white", color: 'linear-gradient(to right, #eeeeee 70%, #10608f 100%)'},
+                { name: "red", color: 'linear-gradient(to right, #000000 70%, #c74242 100%)'}
+            ]
+        }
+    }
+
+    componentDidMount(){
+        let theme = localStorage.getItem('theme')
+        this.changeTheme(theme)
+    }
+
+    changeTheme(theme){
+        localStorage.setItem('theme', theme)
+        switch(theme){
+            case 'og':
+                // let root = document.documentElement;
+                document.documentElement.style.setProperty("--main-background", "#0a192f");
+                document.documentElement.style.setProperty("--main-background-fade", "#172a45");
+                document.documentElement.style.setProperty("--main-background-dark", "#020c1b");
+                document.documentElement.style.setProperty("--main-highlight", "#64ffda");
+                document.documentElement.style.setProperty("--main-fade-text", "#606a86");
+                document.documentElement.style.setProperty("--main-super-fade-text", "#8892b0");
+                document.documentElement.style.setProperty("--main-super-fade", "#e6f1ff");
+                document.documentElement.style.setProperty("--main-fade-line", "#2d3952");
+                document.documentElement.style.setProperty("--main-img-fade", "#0ba8848e");
+                break;
+            case 'purple':
+                let root = document.documentElement;                
+                document.documentElement.style.setProperty("--main-background","#100a2f");
+                document.documentElement.style.setProperty("--main-background-fade","#1c1349");
+                document.documentElement.style.setProperty("--main-background-dark","#020c1b");
+                document.documentElement.style.setProperty("--main-highlight","#f8acff");
+                document.documentElement.style.setProperty("--main-fade-text","#ebdeee");
+                document.documentElement.style.setProperty("--main-super-fade-text","#e4d5e7");
+                document.documentElement.style.setProperty("--main-super-fade","#c215b9");
+                document.documentElement.style.setProperty("--main-fade-line","#70337c");
+                document.documentElement.style.setProperty("--main-img-fade","#871da74f");
+                break;
+            case 'white':
+                // let root = document.documentElement;
+                document.documentElement.style.setProperty("--main-background", "#eeeeee");
+                document.documentElement.style.setProperty("--main-background-fade", "#f5f5f5");
+                document.documentElement.style.setProperty("--main-background-dark", "#d8d8d8");
+                document.documentElement.style.setProperty("--main-highlight", "#10608f");
+                document.documentElement.style.setProperty("--main-fade-text", "#5a606b");
+                document.documentElement.style.setProperty("--main-super-fade-text", "#24323d");
+                document.documentElement.style.setProperty("--main-super-fade", "#285174");
+                document.documentElement.style.setProperty("--main-fade-line", "#909cb3");
+                document.documentElement.style.setProperty("--main-img-fade", "#88aac28f");
+                break;
+            case 'red':
+                // let root = document.documentElement;
+                document.documentElement.style.setProperty("--main-background", "#000000");
+                document.documentElement.style.setProperty("--main-background-fade", "#a33434");
+                document.documentElement.style.setProperty("--main-background-dark", "#240404");
+                document.documentElement.style.setProperty("--main-highlight", "#c74242");
+                document.documentElement.style.setProperty("--main-fade-text", "#b36666");
+                document.documentElement.style.setProperty("--main-super-fade-text", "#ffffff");
+                document.documentElement.style.setProperty("--main-super-fade", "#ac5151");
+                document.documentElement.style.setProperty("--main-fade-line", "#522d2d");
+                document.documentElement.style.setProperty("--main-img-fade", "#9e3b3b50");
+                break;
+            
+
+        }
+
+        this.setState({ themesOpen: false})
+       
     }
 
     renderProjects(){
@@ -41,7 +114,7 @@ class Home extends React.Component {
 
                 <nav className="nav-container">
                     <div className="logo">
-                        <div className="logo-img" onClick={()=> this.changeTheme()}>S</div>
+                        <div className="logo-img">S</div>
                     </div>
 
                     <div className="nav-links">
@@ -50,6 +123,17 @@ class Home extends React.Component {
                         <div className="navlink"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
                         <div className="navlink"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
                         <a href={require("../assets/sahil_verma_resume.pdf")} className="navlink-resume">Resume</a>
+                        <div className="navlink theme-changer">
+                            {this.state.themesOpen && 
+                                <div className="themes-dropdown">
+                                    {this.state.themes.map(item => 
+                                        <div className="theme-btn" onClick={() => this.changeTheme(item.name)} style={{ backgroundImage: item.color }}></div>
+                                    )}
+                                </div>
+                            }
+                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-cog"></i>
+                        </div>
+                        
                     </div>
                 </nav>
 
