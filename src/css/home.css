@@ -60,7 +60,7 @@ body{
 }
 
 .navlink-resume{
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid var(--main-highlight);
     color: var(--main-highlight);
     height: 55%;
@@ -69,7 +69,11 @@ body{
     border-radius: 4px;
     background: var(--main-background);
     text-decoration: none;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+    text-align: center;
+    font-family: SFMono-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navlink-resume:hover{

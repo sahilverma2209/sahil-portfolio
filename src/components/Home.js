@@ -54,12 +54,12 @@ class Home extends React.Component {
                         <div className="navlink"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></div>
                         <div className="navlink"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
                         <div className="navlink"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
-                        <a href="https://sahilverma.herokuapp.com/src/assets/sahil_verma_resume.pdf" className="navlink-resume">Resume</a>
+                        <a href={require("../assets/sahil_verma_resume.pdf")} className="navlink-resume">Resume</a>
                     </div>
                 </nav>
 
                 <div className="left-text">
-                    <a href="https://github.com/sahilverma2209" target="_blank" className="social-media-link"><i className="fab fa-github"></i></a>
+                    <a href="https://github.com/sahilverma2209" target="_blank" rel="noopener noreferrer" className="social-media-link"><i className="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/sahil-verma-957130106/" className="social-media-link" ><i className="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/sahilvma/" className="social-media-link"><i className="fab fa-instagram"></i></a>
                     <br/>
