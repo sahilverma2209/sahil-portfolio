@@ -68,7 +68,13 @@ body{
     width: 80px;
     border-radius: 4px;
     background: var(--main-background);
+    text-decoration: none;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", monospace;
+}
+
+.navlink-resume:hover{
+    cursor: pointer;
+    background: var(--main-background-dark);
 }
 
 .left-text{
@@ -482,7 +488,7 @@ body{
 
 
 .footer-container{
-    background:rgb(2, 12, 27);
+    background:var(--main-background-dark);
     padding: 30px;
     text-align: center;
     color: white;

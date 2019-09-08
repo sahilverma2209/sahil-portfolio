@@ -54,7 +54,7 @@ class Home extends React.Component {
                         <div className="navlink"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></div>
                         <div className="navlink"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
                         <div className="navlink"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
-                        <button className="navlink-resume">Resume</button>
+                        <a href="https://sahilverma.herokuapp.com/src/assets/sahil_verma_resume.pdf" className="navlink-resume">Resume</a>
                     </div>
                 </nav>
 
