@@ -59,9 +59,9 @@ class Home extends React.Component {
                 </nav>
 
                 <div className="left-text">
-                    <div className="social-media-link"><i className="fab fa-github"></i></div>
-                    <div className="social-media-link"><i className="fab fa-linkedin-in"></i></div>
-                    <div className="social-media-link"><i className="fab fa-instagram"></i></div>
+                    <a href="https://github.com/sahilverma2209" target="_blank" className="social-media-link"><i className="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sahil-verma-957130106/" className="social-media-link" ><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/sahilvma/" className="social-media-link"><i className="fab fa-instagram"></i></a>
                     <br/>
                     <hr className="short-line-left"/>
                 </div>
