@@ -435,6 +435,10 @@ body{
     border-radius: 4px;
 }
 
+.project-desc:hover{
+    
+}
+
 .project-row:nth-child(2n) > .project-details{
    text-align: right;
 }
