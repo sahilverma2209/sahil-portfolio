@@ -75,17 +75,17 @@
 
 
 /* red ------- */
-:root{
+/* :root{
     --main-background: #000000;
-    --main-background-fade: #607a5d;
-    --main-background-dark: #041e24;
+    --main-background-fade: #a33434;
+background-dark: #240404;
     --main-highlight: #00720f;
     --main-fade-text: #7fbd7f;
     --main-super-fade-text: #f0f9ff;
     --main-super-fade: #36bd41;
     --main-fade-line: #2d5230;
     --main-img-fade: #439e3b65;
-}
+} */
 
 button:focus{
     outline: none;

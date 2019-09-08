@@ -14,7 +14,7 @@ class Home extends React.Component {
                 { name: 'og', color: 'linear-gradient(to right, #0a192f 70%, #64ffda 100%)'},
                 { name: "white", color: 'linear-gradient(to right, #eeeeee 70%, #10608f 100%)'},
                 { name: "red", color: 'linear-gradient(to right, #000000 70%, #c74242 100%)'},
-                { name: 'purple', color: 'linear-gradient(to right, #100a2f 70%, #f8acff 100%)'}
+                { name: 'purple', color: 'linear-gradient(to right, #180f42 70%, #acf5ff 100%)'}
             ]
         }
     }
@@ -131,7 +131,7 @@ class Home extends React.Component {
                                     )}
                                 </div>
                             }
-                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-cog theme-cog"></i>
+                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} class="fas fa-palette theme-cog"></i>
                         </div>
                         
                     </div>
@@ -242,6 +242,16 @@ class Home extends React.Component {
                         <div className="section-desc"><div className="section-no">03.</div> Some Things That I've Built <div className="section-line"/></div> <br/><br/>
                         
                         {this.renderProjects()}
+                    </div>
+
+                </div>
+
+                <div className="contact-container">
+                    <div className="contact-content">
+                        <div className="whats-next"> 04. What's Next?</div>
+                        <div className="get-in-touch2">Get In Touch</div>
+                        <div className="contact-txt">I'm actively searching for full-tim/part-time oppurtunities. Feel free to contact me for a project or just to say hi!</div>
+                        <div className="hello-container"><button className="say-hello">Say Hello</button></div>
                     </div>
 
                 </div>
