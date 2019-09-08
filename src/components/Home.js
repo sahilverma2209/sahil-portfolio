@@ -12,15 +12,15 @@ class Home extends React.Component {
             themesOpen: false,
             themes: [
                 { name: 'og', color: 'linear-gradient(to right, #0a192f 70%, #64ffda 100%)'},
-                { name: 'purple', color: 'linear-gradient(to right, #100a2f 70%, #f8acff 100%)'},
                 { name: "white", color: 'linear-gradient(to right, #eeeeee 70%, #10608f 100%)'},
-                { name: "red", color: 'linear-gradient(to right, #000000 70%, #c74242 100%)'}
+                { name: "red", color: 'linear-gradient(to right, #000000 70%, #c74242 100%)'},
+                { name: 'purple', color: 'linear-gradient(to right, #100a2f 70%, #f8acff 100%)'}
             ]
         }
     }
 
     componentDidMount(){
-        let theme = localStorage.getItem('theme')
+        let theme = localStorage.getItem('theme') || 'og'
         this.changeTheme(theme)
     }
 
@@ -131,7 +131,7 @@ class Home extends React.Component {
                                     )}
                                 </div>
                             }
-                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-cog"></i>
+                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-cog theme-cog"></i>
                         </div>
                         
                     </div>

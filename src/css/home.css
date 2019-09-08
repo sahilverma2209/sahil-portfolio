@@ -59,6 +59,14 @@ body{
     position: relative;
 }
 
+.theme-cog{
+    font-size: 15px;
+}
+
+.theme-cog:hover{
+    cursor: pointer;
+}
+
 .theme-btn{
     cursor: pointer;
     font-size: 15px;
