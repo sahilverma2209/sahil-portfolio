@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/workex.css'
-import workex from '../assets/workex-list'
+import workex from '../utils/workex-list'
 
 class WorkEx extends React.Component {
 

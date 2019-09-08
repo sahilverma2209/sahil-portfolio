@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/home.css';
 import WorkEx from './WorkEx';
-import projects from '../assets/project-list';
+import projects from '../utils/project-list';
 
 class Home extends React.Component {
 
@@ -37,19 +37,19 @@ class Home extends React.Component {
                 document.documentElement.style.setProperty("--main-super-fade-text", "#8892b0");
                 document.documentElement.style.setProperty("--main-super-fade", "#e6f1ff");
                 document.documentElement.style.setProperty("--main-fade-line", "#2d3952");
-                document.documentElement.style.setProperty("--main-img-fade", "#0ba8848e");
+                document.documentElement.style.setProperty("--main-img-fade", "#0ba8834d");
                 break;
             case 'purple':
                 let root = document.documentElement;                
-                document.documentElement.style.setProperty("--main-background","#100a2f");
-                document.documentElement.style.setProperty("--main-background-fade","#1c1349");
+                document.documentElement.style.setProperty("--main-background","#180f42");
+                document.documentElement.style.setProperty("--main-background-fade","#291f58");
                 document.documentElement.style.setProperty("--main-background-dark","#020c1b");
-                document.documentElement.style.setProperty("--main-highlight","#f8acff");
-                document.documentElement.style.setProperty("--main-fade-text","#ebdeee");
-                document.documentElement.style.setProperty("--main-super-fade-text","#e4d5e7");
-                document.documentElement.style.setProperty("--main-super-fade","#c215b9");
-                document.documentElement.style.setProperty("--main-fade-line","#70337c");
-                document.documentElement.style.setProperty("--main-img-fade","#871da74f");
+                document.documentElement.style.setProperty("--main-highlight","#acf5ff");
+                document.documentElement.style.setProperty("--main-fade-text","#deedee");
+                document.documentElement.style.setProperty("--main-super-fade-text","#d5e3e7");
+                document.documentElement.style.setProperty("--main-super-fade","#23c3f3");
+                document.documentElement.style.setProperty("--main-fade-line","#336b7c");
+                document.documentElement.style.setProperty("--main-img-fade","#1d92a75b");
                 break;
             case 'white':
                 // let root = document.documentElement;
