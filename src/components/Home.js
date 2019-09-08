@@ -67,7 +67,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="right-text">
-                    <span>sahilverma@nyu.edu</span><hr className="short-line-right"/>
+                    <span className="email">sahilverma@nyu.edu</span><hr className="short-line-right"/>
                 </div>
 
                 <div className="landing-content-container">
@@ -172,6 +172,10 @@ class Home extends React.Component {
                     {/* <div>sahilverma.0922@gmail.com</div> */}
                 </div>
 
+                <div className="border-animate">
+                    <h1>Hover me!</h1>          
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at error, facilis nesciunt officiis perspiciatis repudiandae voluptates voluptatibus? Aperiam atque consectetur esse excepturi explicabo facilis labore magnam provident unde vitae.</p>
+                </div>
             </div>
         );
             
