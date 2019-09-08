@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/home.css';
 import WorkEx from './WorkEx';
 import projects from '../utils/project-list';
+import { changeTheme } from '../utils/utils'
 
 class Home extends React.Component {
 
@@ -11,101 +12,48 @@ class Home extends React.Component {
         this.state = {
             themesOpen: false,
             themes: [
-                { name: 'og', color: 'linear-gradient(to right, #0a192f 70%, #64ffda 100%)'},
-                { name: "white", color: 'linear-gradient(to right, #eeeeee 70%, #10608f 100%)'},
-                { name: "red", color: 'linear-gradient(to right, #000000 70%, #c74242 100%)'},
-                { name: 'purple', color: 'linear-gradient(to right, #180f42 70%, #acf5ff 100%)'}
-            ]
+                { name: 'og', color: 'linear-gradient(to right,#0a192f,#64ffda'},
+                { name: "white", color: 'linear-gradient(to right,#eeeeee,#10608f'},
+                { name: "red", color: 'linear-gradient(to right,#000000,#c74242'},
+                { name: 'purple', color: 'linear-gradient(to right,#180f42,#acf5ff'}
+                // { name: 'og', color: 'linear-gradient(to right,#0a192f,#64ffda'},
+                // { name: "white", color: 'linear-gradient(to right,#eeeeee,#10608f'},
+                // { name: "red", color: 'linear-gradient(to right,#000000,#c74242'},
+                // { name: 'purple', color: 'linear-gradient(to right,#180f42,#acf5ff'}
+            ],
+
         }
     }
 
     componentDidMount(){
+        document.documentElement.style.transition = "all 2s";
         let theme = localStorage.getItem('theme') || 'og'
-        this.changeTheme(theme)
+        changeTheme(theme)
     }
-
-    changeTheme(theme){
-        localStorage.setItem('theme', theme)
-        switch(theme){
-            case 'og':
-                // let root = document.documentElement;
-                document.documentElement.style.setProperty("--main-background", "#0a192f");
-                document.documentElement.style.setProperty("--main-background-fade", "#172a45");
-                document.documentElement.style.setProperty("--main-background-dark", "#020c1b");
-                document.documentElement.style.setProperty("--main-highlight", "#64ffda");
-                document.documentElement.style.setProperty("--main-fade-text", "#606a86");
-                document.documentElement.style.setProperty("--main-super-fade-text", "#8892b0");
-                document.documentElement.style.setProperty("--main-super-fade", "#e6f1ff");
-                document.documentElement.style.setProperty("--main-fade-line", "#2d3952");
-                document.documentElement.style.setProperty("--main-img-fade", "#0ba8834d");
-                break;
-            case 'purple':
-                let root = document.documentElement;                
-                document.documentElement.style.setProperty("--main-background","#180f42");
-                document.documentElement.style.setProperty("--main-background-fade","#291f58");
-                document.documentElement.style.setProperty("--main-background-dark","#020c1b");
-                document.documentElement.style.setProperty("--main-highlight","#acf5ff");
-                document.documentElement.style.setProperty("--main-fade-text","#deedee");
-                document.documentElement.style.setProperty("--main-super-fade-text","#d5e3e7");
-                document.documentElement.style.setProperty("--main-super-fade","#23c3f3");
-                document.documentElement.style.setProperty("--main-fade-line","#336b7c");
-                document.documentElement.style.setProperty("--main-img-fade","#1d92a75b");
-                break;
-            case 'white':
-                // let root = document.documentElement;
-                document.documentElement.style.setProperty("--main-background", "#eeeeee");
-                document.documentElement.style.setProperty("--main-background-fade", "#f5f5f5");
-                document.documentElement.style.setProperty("--main-background-dark", "#d8d8d8");
-                document.documentElement.style.setProperty("--main-highlight", "#10608f");
-                document.documentElement.style.setProperty("--main-fade-text", "#5a606b");
-                document.documentElement.style.setProperty("--main-super-fade-text", "#24323d");
-                document.documentElement.style.setProperty("--main-super-fade", "#285174");
-                document.documentElement.style.setProperty("--main-fade-line", "#909cb3");
-                document.documentElement.style.setProperty("--main-img-fade", "#88aac28f");
-                break;
-            case 'red':
-                // let root = document.documentElement;
-                document.documentElement.style.setProperty("--main-background", "#000000");
-                document.documentElement.style.setProperty("--main-background-fade", "#a33434");
-                document.documentElement.style.setProperty("--main-background-dark", "#240404");
-                document.documentElement.style.setProperty("--main-highlight", "#c74242");
-                document.documentElement.style.setProperty("--main-fade-text", "#b36666");
-                document.documentElement.style.setProperty("--main-super-fade-text", "#ffffff");
-                document.documentElement.style.setProperty("--main-super-fade", "#ac5151");
-                document.documentElement.style.setProperty("--main-fade-line", "#522d2d");
-                document.documentElement.style.setProperty("--main-img-fade", "#9e3b3b2c");
-                break;
-            
-
-        }
-
-        this.setState({ themesOpen: false})
-       
+    
+    componentWillUnmount(){
+        localStorage.clear()
     }
 
     renderProjects(){
-        const projectList = projects;
-        
-        return projectList.map((item, index) => {
-            return (
-                <div className="project-row">
-                    <div className="project-img">
-                        <div className="proj-filter"></div>
-                        <div className="proj-design"></div>
-                        <img className="site-img" src={require(`../assets/images/${item.img}.png`)}  alt="project" />
-                    </div>
-                    <div className="project-details">
-                        <div>
-                            <div className="featured">Featured Project</div>
-                            <div className="project-name">{item.name}</div>
-                            <div className="project-desc">{item.desc}</div>
-                            <div className="project-tech">{item.tech.map(item => <div className="tech-item">{item}</div>)}</div>
-                        </div>
+        const projectList = projects 
+        return projectList.map(item => 
+            <div className="project-row">
+                <div className="project-img">
+                    <div className="proj-filter"></div>
+                    <div className="proj-design"></div>
+                    <img className="site-img" src={require(`../assets/images/${item.img}.png`)}  alt="project" />
+                </div>
+                <div className="project-details">
+                    <div>
+                        <div className="featured">Featured Project</div>
+                        <div className="project-name">{item.name}</div>
+                        <div className="project-desc">{item.desc}</div>
+                        <div className="project-tech">{item.tech.map(item => <div className="tech-item">{item}</div>)}</div>
                     </div>
                 </div>
-            )
-        })
-
+            </div> 
+        )
     }
 
     render(){
@@ -127,7 +75,7 @@ class Home extends React.Component {
                             {this.state.themesOpen && 
                                 <div className="themes-dropdown">
                                     {this.state.themes.map(item => 
-                                        <div className="theme-btn" onClick={() => this.changeTheme(item.name)} style={{ backgroundImage: item.color }}></div>
+                                        <div className="theme-btn" onClick={() =>  {this.setState({ themesOpen: false});changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
                                     )}
                                 </div>
                             }
