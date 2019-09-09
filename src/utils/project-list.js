@@ -9,7 +9,7 @@ const projects = [
                 link: ''
             },
             other: {
-                link: 'htpp://www.venushotelware.com'
+                link: 'http://www.venushotelware.com'
             }
         }
 
@@ -38,7 +38,7 @@ const projects = [
                 link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
             },
             other: {
-                link: ''
+                link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
             }
         }
 
@@ -54,7 +54,7 @@ const projects = [
                 link: 'http://www.adidevelopers.in/'
             },
             other: {
-                link: ''
+                link: 'http://www.adidevelopers.in/'
             }
         }
 
@@ -69,7 +69,7 @@ const projects = [
                 link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
             },
             other: {
-                link: ''
+                link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
             }
         }
 
@@ -85,7 +85,7 @@ const projects = [
                 link: 'https://github.com/sahilverma2209/filter-search-results-ReactJS'
             },
             other: {
-                link: ''
+                link: 'https://github.com/sahilverma2209/filter-search-results-ReactJS'
             }
         }
 
@@ -101,7 +101,7 @@ const projects = [
                 link: 'https://github.com/sahilverma2209/vanilla-js-pagination.github.ios'
             },
             other: {
-                link: ''
+                link: 'https://github.com/sahilverma2209/vanilla-js-pagination.github.ios'
             }
         }
 

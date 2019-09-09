@@ -39,11 +39,11 @@ class Home extends React.Component {
         const projectList = projects 
         return projectList.map(item => 
             <div key={item.name} className="project-row  wow fadeInUp">
-                <div className="project-img">
+                <a href={item.links.other.link} rel="noopener noreferrer" target="_blank" className="project-img">
                     <div className="proj-filter"></div>
                     <div className="proj-design"></div>
                     <img className="site-img" src={require(`../assets/images/${item.img}.png`)}  alt="project" />
-                </div>
+                </a>
                 <div className="project-details">
                     <div>
                         <div className="featured">Featured Project</div>
