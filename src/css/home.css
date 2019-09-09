@@ -1,4 +1,8 @@
 
+*{
+    transition: all 0.5s;
+}
+
 body{ 
     margin: unset;
     background-color: var(--main-background);
@@ -78,7 +82,8 @@ body{
     border: 1px solid white;
 }
 
-.themes-dropdown{
+
+.themes-dropdown-open{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -90,9 +95,10 @@ body{
     border-radius: 4px;
     background: var(--main-background-fade);
     padding-top: 10px;
+    transition: all 0.3s;
 }
 
-.themes-dropdown:before{
+.themes-dropdown-open:before{
     z-index:-1;
     content: '';
     position: absolute;
@@ -102,6 +108,25 @@ body{
     top: -6px;
     background:  var(--main-background-fade);
     transform: rotate(45deg);
+}
+
+.themes-dropdown-close{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: -7.5px;
+    top: 85%;
+    height: 160px;
+    width: 50px;
+    border-radius: 4px;
+    background: var(--main-background-fade);
+    padding-top: 10px;
 }
 
 .navlink-sno{
