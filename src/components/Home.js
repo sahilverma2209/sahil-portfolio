@@ -13,9 +13,9 @@ class Home extends React.Component {
             themesOpen: false,
             themes: [
                 { name: 'og', color: 'linear-gradient(to right,#0a192f,#64ffda'},
-                { name: "white", color: 'linear-gradient(to right,#eeeeee,#10608f'},
                 { name: "red", color: 'linear-gradient(to right,#000000,#c74242'},
-                { name: 'purple', color: 'linear-gradient(to right,#180f42,#acf5ff'}
+                { name: 'purple', color: 'linear-gradient(to right,#180f42,#acf5ff'},
+                { name: "white", color: 'linear-gradient(to right,#eeeeee,#10608f'},
                 // { name: 'og', color: 'linear-gradient(to right,#0a192f,#64ffda'},
                 // { name: "white", color: 'linear-gradient(to right,#eeeeee,#10608f'},
                 // { name: "red", color: 'linear-gradient(to right,#000000,#c74242'},
