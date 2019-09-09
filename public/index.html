@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">  
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -27,8 +28,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Sahil Verma</title>
+    <script type="text/javascript">
+      function goTop() {
+        window.scrollTo({top: '0px'})
+      }
+    </script>
   </head>
-  <body>
+  <body onbeforeunload="goTop()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -41,5 +47,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+
   </body>
 </html>

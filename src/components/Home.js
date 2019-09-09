@@ -38,7 +38,7 @@ class Home extends React.Component {
     renderProjects(){
         const projectList = projects 
         return projectList.map(item => 
-            <div className="project-row">
+            <div key={item.name} className="project-row  wow fadeInUp">
                 <div className="project-img">
                     <div className="proj-filter"></div>
                     <div className="proj-design"></div>
@@ -49,7 +49,7 @@ class Home extends React.Component {
                         <div className="featured">Featured Project</div>
                         <div className="project-name">{item.name}</div>
                         <div className="project-desc">{item.desc}</div>
-                        <div className="project-tech">{item.tech.map(item => <div className="tech-item">{item}</div>)}</div>
+                        <div className="project-tech">{item.tech.map(item => <div key={item} className="tech-item">{item}</div>)}</div>
                     </div>
                 </div>
             </div> 
@@ -69,31 +69,31 @@ class Home extends React.Component {
             <div className="main-container">
 
                 <nav className="nav-container">
-                    <div className="logo">
+                    <div className="logo wow fadeInDown">
                         <div className="logo-img">S</div>
                     </div>
 
                     <div className="nav-links">
-                        <div className="navlink"><div><span className="navlink-sno">01.</span>&nbsp;About</div></div>
-                        <div className="navlink"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></div>
-                        <div className="navlink"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
-                        <div className="navlink"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
-                        <a href={require("../assets/sahil_verma_resume.pdf")} target="_blank" className="navlink-resume">Resume</a>
+                        <div className="navlink wow fadeInDown" data-wow-delay="0ms"><div><span className="navlink-sno">01.</span>&nbsp;About</div></div>
+                        <div className="navlink wow fadeInDown" data-wow-delay="200ms"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></div>
+                        <div className="navlink wow fadeInDown" data-wow-delay="400ms"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
+                        <div className="navlink wow fadeInDown" data-wow-delay="600ms"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
+                        <a href={require("../assets/sahil_verma_resume.pdf")} target="_blank" rel="noopener noreferrer" className="navlink-resume wow fadeInDown" data-wow-delay="800ms">Resume</a>
                         <div className="navlink theme-changer">
                             {/* {this.state.themesOpen &&  */}
                                 <div className={themeDrawerClass}>
                                     {this.state.themes.map(item => 
-                                        <div className="theme-btn" onClick={() =>  {this.setState({ themesOpen: false});changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
+                                        <div key={item.color} className="theme-btn" onClick={() =>  {this.setState({ themesOpen: false});changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
                                     )}
                                 </div>
                             {/* } */}
-                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} class="fas fa-palette theme-cog"></i>
+                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-palette theme-cog wow shake" data-wow-delay="2100ms"></i>
                         </div>
                         
                     </div>
                 </nav>
 
-                <div className="left-text">
+                <div className="left-text wow fadeIn" data-wow-delay="1900ms">
                     <a href="https://github.com/sahilverma2209" target="_blank" rel="noopener noreferrer" className="social-media-link"><i className="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/sahil-verma-957130106/" className="social-media-link" ><i className="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/sahilvma/" className="social-media-link"><i className="fab fa-instagram"></i></a>
@@ -101,32 +101,32 @@ class Home extends React.Component {
                     <hr className="short-line-left"/>
                 </div>
 
-                <div className="right-text">
+                <div className="right-text wow fadeIn" data-wow-delay="1900ms">
                     <span className="email">sahilverma@nyu.edu</span><hr className="short-line-right"/>
                 </div>
 
                 <div className="landing-content-container">
                     <div className="landing-content">
-                        <div className="hi">Hi, my name is</div>
-                        <div className="name">Sahil Verma.</div>
-                        <div className="build">I build things for the web.</div>
-                        <div className="bio">
+                        <div className="hi wow fadeInUp" data-wow-delay="900ms">Hi, my name is</div>
+                        <div className="name wow fadeInUp" data-wow-delay="1100ms">Sahil Verma.</div>
+                        <div className="build wow fadeInUp" data-wow-delay="1300ms">I build things for the web.</div>
+                        <div className="bio wow fadeInUp" data-wow-delay="1500ms">
                             I'm a graduate student pursuing Master's in Computer Science from NYU. 
                             I've been building for the web for the past 4 years and I specialize
                             in building exceptional, high-quality websites and 
                             applications.
                         </div>
-                        <button className="get-in-touch" onClick={this.function}>Get In Touch</button>
+                        <button className="get-in-touch wow fadeInUp" data-wow-delay="1700ms" onClick={this.function}>Get In Touch</button>
                     </div>
                 </div>
 
                 <div className="about-container">
-                    <div className="about-content">
+                    <div className="about-content wow fadeIn" data-wow-duration="1000ms">
 
                         <div className="about-left">
                             <div className="section-desc"><div className="section-no">01.</div> About Me <div className="section-line"/></div>
-                            <p className="about-me-para1">I'm a Software Engineer (specialize in UI Engineering) based in New York, NY. I have been developing websites since 2015 and React is my favourite tool. My stack of choice is the MERN stack.</p>
-                            <p className="about-me-para2">It's the best feeling in the world when you can bend the uncoorporative browser to your will and see your ideas come to life! I love exploring new frameworks/technologies and am always super excited to step outside by comfort zone and implement something that I've never done before (in this case, the <span onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="theme-alert">theme changer</span> on top-right of the screen) </p>
+                            <p className="about-me-para1">I'm a Software Engineer (specialize in UI Engineering) based in New York, NY. I have been developing websites since 2015 and React is my favourite tool. I love what JavaScript has evolved into and am always excited about what's next!</p>
+                            <p className="about-me-para2">It's the best feeling in the world when you can bend the uncoorporative browser to your will and see your ideas come to life! I love exploring new frameworks/technologies and am always willing to step outside my comfort zone and implement something that I've never done before (in this case, the <span onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="theme-alert">theme changer</span> on top-right of the screen) </p>
                             <p className="about-me-para2"></p>
                             <p className="about-me-para3">Here are a few technologies I've been working with recently:</p>
                             
@@ -174,7 +174,7 @@ class Home extends React.Component {
                                     </div>
                                     <div className="skill-row">
                                         <i className="fas fa-caret-right color-caret"></i>
-                                        <div className="skill-desc">SQL</div>
+                                        <div className="skill-desc">AWS</div>
                                     </div>
                                 </div>
 
@@ -196,7 +196,7 @@ class Home extends React.Component {
 
                 <div className="projects-container">
                     <div className="projects-content">
-                        <div className="section-desc"><div className="section-no">03.</div> Some Things That I've Built <div className="section-line"/></div> <br/><br/>
+                        <div className="section-desc wow fadeInUp"><div className="section-no">03.</div> Some Things That I've Built <div className="section-line"/></div> <br/><br/>
                         
                         {this.renderProjects()}
                     </div>
@@ -204,7 +204,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="contact-container">
-                    <div className="contact-content">
+                    <div className="contact-content wow fadeInUp">
                         <div className="whats-next"> 04. What's Next?</div>
                         <div className="get-in-touch2">Get In Touch</div>
                         <div className="contact-txt">I'm actively searching for full-tim/part-time oppurtunities. Feel free to contact me for a project or just to say hi!</div>

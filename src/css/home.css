@@ -1,7 +1,7 @@
 
 *{
-    transition: all 0.5s;
     letter-spacing: 0.2px;
+    transition: all 0.3s;
 }
 
 body{ 
@@ -43,6 +43,7 @@ body{
 }
 
 .nav-container{
+    z-index:20;
     position: fixed;
     /* border: 1px solid blue; */
     height: 70px;
@@ -83,7 +84,7 @@ body{
     justify-content: center;
     padding: 0px 10px;
     color: var(--main-super-fade);
-    transition: color 0.2s !important;
+    transition: color 0.1s !important;
 }
 
 .theme-changer{
@@ -122,7 +123,7 @@ body{
     border-radius: 4px;
     background: var(--main-background-fade);
     padding-top: 10px;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .themes-dropdown-open:before{
@@ -140,7 +141,7 @@ body{
 .themes-dropdown-close{
     display: none;
     opacity: 0;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
     pointer-events: none;
 
     position: absolute;
@@ -204,6 +205,7 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: var(--main-super-fade-text);
+    transition: all 0.1s !important;
 }
 
 .social-media-link:hover{
@@ -211,7 +213,7 @@ body{
     cursor: pointer;
     /* transform: scale(1.2); */
     transform: translate(0, -5px);
-    transition: all 0.3s;
+    transition: all 0.1s !important;
 }
 
 
@@ -228,7 +230,7 @@ body{
 .email:hover{
     color: var(--main-highlight);
     transform: translate(-5px,0);
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .short-line-right{
@@ -347,6 +349,7 @@ body{
 
 .theme-alert{
     color: var(--main-highlight);
+    text-decoration: underline;
 }
 
 .theme-alert:hover{
@@ -424,17 +427,17 @@ body{
 
 .img-filter:hover{
     background: unset;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .my-img:hover .extra-frame{
     left: 10px;
     top: 10px;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 .my-img:hover .sahil-img{
     filter: contrast(1);
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .extra-frame{
@@ -504,13 +507,13 @@ body{
 .project-img:hover .proj-design{
     top: 10px;
     left: 10px;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 } 
 
 
 .project-img:hover .proj-filter{
     background: unset;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
     cursor: pointer;
 }
 
@@ -566,7 +569,7 @@ body{
 .project-desc:hover{
     cursor: pointer;
     transform: scale(1.05);
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 	background-image:   linear-gradient(to right, var(--main-highlight) 100%, var(--main-highlight)  100%),
                         linear-gradient(to bottom, var(--main-highlight)  100%, var(--main-highlight)  100%),
                         linear-gradient(to right, var(--main-highlight)  100%, var(--main-highlight)  100%),

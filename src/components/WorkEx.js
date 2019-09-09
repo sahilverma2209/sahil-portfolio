@@ -17,7 +17,7 @@ class WorkEx extends React.Component {
         return keys.map(item => {
             const linkClass = item === this.state.selectedCompany ? 'workex-link selected' : 'workex-link'
             return (
-                <div onClick={() => this.setState({ selectedCompany: item })} className={linkClass}>
+                <div key={item} onClick={() => this.setState({ selectedCompany: item })} className={linkClass}>
                     {item}
                 </div>
             )
@@ -38,7 +38,7 @@ class WorkEx extends React.Component {
 
                 <div className="workex-desc">
                     {data.desc.map(item =>
-                        <div className="workex-desc-split">
+                        <div key={item} className="workex-desc-split">
                             <i className="fas fa-caret-right color-caret"></i>
                             <div>{item}</div>
                         </div>
@@ -49,14 +49,12 @@ class WorkEx extends React.Component {
     }
 
     render(){
-        console.log(workex)
-
         return(
             <div className="workex-container">
                 <div className="workex-content">
-                    <div className="section-desc"><div className="section-no">02.</div> Where I've Worked <div className="section-line"/></div>
+                    <div className="section-desc wow fadeInUp"><div className="section-no">02.</div> Where I've Worked <div className="section-line"/></div>
                     <br/><br/>
-                    <div className="workex-split">
+                    <div className="workex-split wow fadeInUp">
                         <div className="workex-left">
                             {this.renderKeys()}
                         </div>

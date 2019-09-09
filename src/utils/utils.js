@@ -26,6 +26,12 @@ export const changeTheme = (theme) => {
                 document.documentElement.classList.remove('white')
                 document.documentElement.classList.remove('purple')
                 break;
+            default:
+                document.documentElement.classList.add('og')
+                document.documentElement.classList.remove('purple')
+                document.documentElement.classList.remove('white')
+                document.documentElement.classList.remove('red')
+                break;
             
         }
 } 
