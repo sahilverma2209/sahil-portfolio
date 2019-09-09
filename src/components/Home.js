@@ -57,6 +57,7 @@ class Home extends React.Component {
     }
 
     render(){
+        const themeDrawerClass = this.state.themesOpen ? "themes-dropdown-open" : "themes-dropdown-close"
         return (
             <div className="main-container">
 
@@ -72,13 +73,13 @@ class Home extends React.Component {
                         <div className="navlink"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
                         <a href={require("../assets/sahil_verma_resume.pdf")} className="navlink-resume">Resume</a>
                         <div className="navlink theme-changer">
-                            {this.state.themesOpen && 
-                                <div className="themes-dropdown">
+                            {/* {this.state.themesOpen &&  */}
+                                <div className={themeDrawerClass}>
                                     {this.state.themes.map(item => 
                                         <div className="theme-btn" onClick={() =>  {this.setState({ themesOpen: false});changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
                                     )}
                                 </div>
-                            }
+                            {/* } */}
                             <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} class="fas fa-palette theme-cog"></i>
                         </div>
                         
