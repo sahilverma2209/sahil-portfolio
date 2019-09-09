@@ -1,3 +1,4 @@
+export const BIG_SCREEN = "(min-width: 769px)"
 export const changeTheme = (theme) => {
     localStorage.setItem('theme', theme)
         switch(theme){
@@ -25,5 +26,6 @@ export const changeTheme = (theme) => {
                 document.documentElement.classList.remove('white')
                 document.documentElement.classList.remove('purple')
                 break;
+            
         }
 } 

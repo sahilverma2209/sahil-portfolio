@@ -8,6 +8,31 @@ body{
     background-color: var(--main-background);
 }
 
+.under-construction{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--main-highlight);
+    height: 70vh;
+    text-align: center;
+}
+
+.maintenance{
+    text-align: center;
+    font-family: SFMono-Regular;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.desktop{
+    text-align: center;
+    color: var(--main-fade-text);
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: Calibre-Light;
+}
+
 .main-container{
     display: flex;
     flex-direction: column;

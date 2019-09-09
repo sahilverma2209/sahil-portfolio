@@ -3,7 +3,7 @@ import '../css/home.css';
 import WorkEx from './WorkEx';
 import projects from '../utils/project-list';
 import { changeTheme } from '../utils/utils'
-
+import { BIG_SCREEN } from "../utils/utils";
 class Home extends React.Component {
 
     constructor(){
@@ -58,7 +58,14 @@ class Home extends React.Component {
 
     render(){
         const themeDrawerClass = this.state.themesOpen ? "themes-dropdown-open" : "themes-dropdown-close"
-        return (
+        const isBigScreen = window.matchMedia(BIG_SCREEN).matches;
+        return !isBigScreen ? 
+            <div className="under-construction">
+                <i className="fas fa-toolbox"></i>
+                <div className="maintenance">Under Maintenance</div>
+                <div className="desktop">Please visit on Desktop/Laptop :)</div>
+            </div> 
+            : (
             <div className="main-container">
 
                 <nav className="nav-container">
