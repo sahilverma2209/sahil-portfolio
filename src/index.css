@@ -124,9 +124,9 @@ background-dark: #240404;
 } */
 
 .red{
---main-background: #000000;
+--main-background: #0e0606;
 --main-background-fade: #a33434;
---main-background-dark: #240404;
+--main-background-dark: #000000;
 --main-highlight: #ff4220;
 --main-fade-text: #b36666;
 --main-super-fade-text: #ffffff;

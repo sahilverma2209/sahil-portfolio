@@ -56,7 +56,7 @@ body{
     font-family: SFMono-Regular;
     background: var(--main-background);
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
-    z-index: 3;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075), 0 6px 6px rgba(0,0,0,0.23);z-index: 3; */
 }
 
 .logo{
