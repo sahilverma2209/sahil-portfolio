@@ -67,9 +67,9 @@
 .workex-desc{
     color: var(--main-super-fade-text);
     padding: 5px;
-    font-size: 18px;
+    font-size: 20px;
     width: 90%;
-    font-family: Calibre-Regular;
+    font-family: Calibre-Light;
 }
 
 .workex-desc-split{

@@ -125,8 +125,9 @@ class Home extends React.Component {
 
                         <div className="about-left">
                             <div className="section-desc"><div className="section-no">01.</div> About Me <div className="section-line"/></div>
-                            <p className="about-me-para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p className="about-me-para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p className="about-me-para1">I'm a Software Engineer (specialize in UI Engineering) based in New York, NY. I have been developing websites since 2015 and React is my favourite tool. My stack of choice is the MERN stack.</p>
+                            <p className="about-me-para2">It's the best feeling in the world when you can bend the uncoorporative browser to your will and see your ideas come to life! I love exploring new frameworks/technologies and am always super excited to step outside by comfort zone and implement something that I've never done before (in this case, the <span onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="theme-alert">theme changer</span> on top-right of the screen) </p>
+                            <p className="about-me-para2"></p>
                             <p className="about-me-para3">Here are a few technologies I've been working with recently:</p>
                             
                             <div className="skills">
