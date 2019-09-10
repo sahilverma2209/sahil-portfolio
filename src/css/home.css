@@ -698,7 +698,7 @@ body{
     }
 
     .freeze{
-        height: 100vh;
+        /* height: 100vh; */
         overflow:hidden;
         filter: blur(5px);
     }
@@ -733,6 +733,7 @@ body{
         flex-direction: column;
         justify-content: center;
         background: var(--main-nav-drawer);
+        filter: blur(0px) !important;
         box-shadow: rgba(2, 12, 27, 0.7) -10px 0px 30px -15px;
     }
 
