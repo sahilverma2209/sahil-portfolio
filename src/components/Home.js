@@ -194,7 +194,7 @@ class Home extends React.Component {
                     <div className="contact-content wow fadeInUp">
                         <div className="whats-next"> 04. What's Next?</div>
                         <div className="get-in-touch2">Get In Touch</div>
-                        <div className="contact-txt">I'm actively searching for full-tim/part-time oppurtunities. Feel free to contact me for a project or just to say hi!</div>
+                        <div className="contact-txt">I'm actively searching for full-time/part-time oppurtunities. Feel free to contact me for a project or just to say hi!</div>
                         <div className="hello-container"><button className="say-hello">Say Hello</button></div>
                     </div>
 
