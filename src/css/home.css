@@ -733,7 +733,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: var(--main-background-fade);
+        background: var(--main-nav-drawer);
         box-shadow: rgba(2, 12, 27, 0.7) -10px 0px 30px -15px;
     }
 
@@ -785,12 +785,13 @@ body{
 
     .nav-links-mobile-hide{
         right: -80vw;
+        box-shadow:unset;
     }
 
     .navlink-resume{
         height: unset;
         margin: 30px auto;
-        background: var(--main-background-fade);
+        background: unset;
         padding: 15px 18px;
     }
 
@@ -879,6 +880,7 @@ body{
         flex-direction: column;
         margin-bottom: 100px;
         padding: 15px;
+        
     }
     
     .project-row:nth-child(2n){

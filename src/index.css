@@ -55,6 +55,7 @@
     --main-super-fade: #e6f1ff;
     --main-fade-line: #2d3952;
     --main-img-fade: #0ba8834d;
+    --main-nav-drawer: #172a45;
 }
 
 
@@ -81,6 +82,7 @@
 --main-super-fade:#23c3f3;
 --main-fade-line:#336b7c;
 --main-img-fade:#1d92a75b;
+--main-nav-drawer: #291f58;
 }
 
 
@@ -98,15 +100,16 @@
 } */
 
 .white{
---main-background: #eeeeee;
---main-background-fade: #f5f5f5;
---main-background-dark: #d8d8d8;
---main-highlight: #10608f;
---main-fade-text: #5a606b;
---main-super-fade-text: #24323d;
---main-super-fade: #285174;
---main-fade-line: #909cb3;
---main-img-fade: #88aac28f;
+    --main-background: #eeeeee;
+    --main-background-fade: #f5f5f5;
+    --main-background-dark: #d8d8d8;
+    --main-highlight: #10608f;
+    --main-fade-text: #5a606b;
+    --main-super-fade-text: #24323d;
+    --main-super-fade: #285174;
+    --main-fade-line: #909cb3;
+    --main-img-fade: #88aac28f;
+    --main-nav-drawer: #e6e9eb;
 }
 
 
@@ -133,6 +136,7 @@ background-dark: #240404;
 --main-super-fade: #a72c2c;
 --main-fade-line: #522d2d;
 --main-img-fade: #9e3b3b2c;
+--main-nav-drawer: #6b3131;
 }
 
 button:focus{
