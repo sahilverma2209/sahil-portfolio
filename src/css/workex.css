@@ -76,3 +76,60 @@
     display: flex;
     padding: 10px 0px;
 }
+
+@media all and (max-width: 768px) { 
+
+    .workex-container{
+        height: unset !important;
+        width: 100vw;
+    }
+
+    .workex-content{
+        padding: 0px 25px;
+        width: unset !important;
+        margin: unset !important;
+    }
+
+    .workex-split{
+        flex-direction: column;
+    }
+
+    .workex-left{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .workex-link{
+        border-left: unset;
+        border-bottom: 2px solid var(--main-fade-line);
+        color: var(--main-fade-text);
+    }
+
+    .selected{
+        border-bottom: 3px solid var(--main-highlight);
+        color: var(--main-highlight);
+        transition: all 0.35s;
+    }
+    
+    .title{
+        font-size: 22px;
+        font-family: Calibre-Regular;
+    }
+    
+    .company{
+        font-size: 22px;
+    }
+
+    .workex-date{
+        font-family: SFMono-Regular;
+        font-size: 13px;
+        color: var(--main-super-fade-text);
+        padding: 5px;
+    }
+
+    .workex-desc{
+        font-size: 18px;
+        margin-bottom: 150px;
+    }
+
+}

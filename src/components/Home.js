@@ -4,6 +4,7 @@ import WorkEx from './WorkEx';
 import projects from '../utils/project-list';
 import { changeTheme } from '../utils/utils'
 import { BIG_SCREEN } from "../utils/utils";
+import Nav from './Nav';
 class Home extends React.Component {
 
     constructor(){
@@ -21,8 +22,10 @@ class Home extends React.Component {
                 // { name: "red", color: 'linear-gradient(to right,#000000,#c74242'},
                 // { name: 'purple', color: 'linear-gradient(to right,#180f42,#acf5ff'}
             ],
+            navDrawerOpen: false
 
         }
+        
     }
 
     componentDidMount(){
@@ -57,41 +60,25 @@ class Home extends React.Component {
     }
 
     render(){
-        const themeDrawerClass = this.state.themesOpen ? "themes-dropdown-open" : "themes-dropdown-close"
+        
         const isBigScreen = window.matchMedia(BIG_SCREEN).matches;
-        return !isBigScreen ? 
-            <div className="under-construction">
-                <i className="fas fa-toolbox"></i>
-                <div className="maintenance">Under Maintenance</div>
-                <div className="desktop">Please visit on Desktop/Laptop :)</div>
-            </div> 
-            : (
+        // return !isBigScreen ? 
+        //     <div className="under-construction">
+        //         <i className="fas fa-toolbox"></i>
+        //         <div className="maintenance">Under Maintenance</div>
+        //         <div className="desktop">Please visit on Desktop/Laptop :)</div>
+        //     </div> 
+        //     : (
+        return(
             <div className="main-container">
 
-                <nav className="nav-container">
-                    <div className="logo wow fadeInDown">
-                        <div className="logo-img">S</div>
-                    </div>
-
-                    <div className="nav-links">
-                        <div className="navlink wow fadeInDown" data-wow-delay="0ms"><div><span className="navlink-sno">01.</span>&nbsp;About</div></div>
-                        <div className="navlink wow fadeInDown" data-wow-delay="200ms"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></div>
-                        <div className="navlink wow fadeInDown" data-wow-delay="400ms"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></div>
-                        <div className="navlink wow fadeInDown" data-wow-delay="600ms"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></div>
-                        <a href={require("../assets/sahil_verma_resume.pdf")} target="_blank" rel="noopener noreferrer" className="navlink-resume wow fadeInDown" data-wow-delay="800ms">Resume</a>
-                        <div className="navlink theme-changer">
-                            {/* {this.state.themesOpen &&  */}
-                                <div className={themeDrawerClass}>
-                                    {this.state.themes.map(item => 
-                                        <div key={item.color} className="theme-btn" onClick={() =>  {this.setState({ themesOpen: false});changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
-                                    )}
-                                </div>
-                            {/* } */}
-                            <i onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="fas fa-palette theme-cog wow shake" data-wow-delay="2100ms"></i>
-                        </div>
-                        
-                    </div>
-                </nav>
+                <Nav 
+                    themes={this.state.themes}
+                    themesOpen={this.state.themesOpen} 
+                    toggleThemeDrawer={() => this.setState({ themesOpen: !this.state.themesOpen })}
+                    toggleNavDrawer={() => this.setState({ navDrawerOpen: !this.state.navDrawerOpen })}
+                    navDrawerOpen={this.state.navDrawerOpen}
+                />
 
                 <div className="left-text wow fadeIn" data-wow-delay="1900ms">
                     <a href="https://github.com/sahilverma2209" target="_blank" rel="noopener noreferrer" className="social-media-link"><i className="fab fa-github"></i></a>
@@ -102,10 +89,10 @@ class Home extends React.Component {
                 </div>
 
                 <div className="right-text wow fadeIn" data-wow-delay="1900ms">
-                    <span className="email">sahilverma@nyu.edu</span><hr className="short-line-right"/>
+                    <a href="mailto:sahilverma@nyu.edu" className="email">sahilverma@nyu.edu</a><hr className="short-line-right"/>
                 </div>
 
-                <div className="landing-content-container">
+                <div className={`landing-content-container ${this.state.navDrawerOpen ? 'freeze' : ''}`}>
                     <div className="landing-content">
                         <div className="hi wow fadeInUp" data-wow-delay="900ms">Hi, my name is</div>
                         <div className="name wow fadeInUp" data-wow-delay="1100ms">Sahil Verma.</div>
@@ -116,15 +103,15 @@ class Home extends React.Component {
                             in building exceptional, high-quality websites and 
                             applications.
                         </div>
-                        <button className="get-in-touch wow fadeInUp" data-wow-delay="1700ms" onClick={this.function}>Get In Touch</button>
+                        <a href="mailto:sahilverma@nyu.edu" className="get-in-touch wow fadeInUp" data-wow-delay="1700ms" onClick={this.function}>Get In Touch</a>
                     </div>
                 </div>
 
-                <div className="about-container">
+                <div className="about-container" id="about">
                     <div className="about-content wow fadeIn" data-wow-duration="1000ms">
 
                         <div className="about-left">
-                            <div className="section-desc"><div className="section-no">01.</div> About Me <div className="section-line"/></div>
+                            <div className="section-desc"><div className="section-no">01.</div><div className="section-name">About Me</div> <div className="section-line"/></div>
                             <p className="about-me-para1">I'm a Software Engineer (specialize in UI Engineering) based in New York, NY. I have been developing websites since 2015 and React is my favourite tool. I love what JavaScript has evolved into and am always excited about what's next!</p>
                             <p className="about-me-para2">It's the best feeling in the world when you can bend the uncoorporative browser to your will and see your ideas come to life! I love exploring new frameworks/technologies and am always willing to step outside my comfort zone and implement something that I've never done before (in this case, the <span onClick={() => this.setState({ themesOpen: !this.state.themesOpen })} className="theme-alert">theme changer</span> on top-right of the screen) </p>
                             <p className="about-me-para2"></p>
@@ -194,16 +181,16 @@ class Home extends React.Component {
 
                 <WorkEx />
 
-                <div className="projects-container">
+                <div className="projects-container" id="projects">
                     <div className="projects-content">
-                        <div className="section-desc wow fadeInUp"><div className="section-no">03.</div> Some Things That I've Built <div className="section-line"/></div> <br/><br/>
+                        <div className="section-desc wow fadeInUp"><div className="section-no">03.</div><div className="section-name"> Some Things That I've Built </div> <div className="section-line"/></div> <br/><br/>
                         
                         {this.renderProjects()}
                     </div>
 
                 </div>
 
-                <div className="contact-container">
+                <div className="contact-container" id="contact">
                     <div className="contact-content wow fadeInUp">
                         <div className="whats-next"> 04. What's Next?</div>
                         <div className="get-in-touch2">Get In Touch</div>

@@ -50,9 +50,9 @@ class WorkEx extends React.Component {
 
     render(){
         return(
-            <div className="workex-container">
-                <div className="workex-content">
-                    <div className="section-desc wow fadeInUp"><div className="section-no">02.</div> Where I've Worked <div className="section-line"/></div>
+            <div className="workex-container" id="workex">
+                <div className="workex-content" >
+                    <div className="section-desc wow fadeInUp"><div className="section-no">02.</div><div className="section-name"> Where I've Worked </div><div className="section-line"/></div>
                     <br/><br/>
                     <div className="workex-split wow fadeInUp">
                         <div className="workex-left">

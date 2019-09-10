@@ -138,3 +138,7 @@ background-dark: #240404;
 button:focus{
     outline: none;
 }
+
+a{
+    text-decoration: none;
+}
