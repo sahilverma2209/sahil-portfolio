@@ -19,7 +19,12 @@ class Nav extends React.Component {
             <nav className="nav-container">
                 <div className="logo wow fadeInDown"> 
                 {/* {`logo wow fadeInDown ${this.props.navDrawerOpen ? 'blur' : ''} */}
-                    <div className="logo-img">S</div>
+                {!isBigScreen && <div className={themeDrawerClass} style={{ left: '18.5px', top: '95%'}}>
+                                {this.props.themes.map(item => 
+                                    <div key={item.color} className="theme-btn" onClick={() =>  {this.props.toggleThemeDrawer();changeTheme(item.name)}} style={{ backgroundImage: item.color }}></div>
+                                )}
+                </div> }
+                    <div className="logo-img" onClick={() => this.props.toggleThemeDrawer()}>S</div>
                 </div>
                 
                 <div className="burger" onClick={this.props.toggleNavDrawer}>

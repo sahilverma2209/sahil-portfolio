@@ -139,8 +139,9 @@ background-dark: #240404;
 --main-nav-drawer: #6b3131;
 }
 
-button:focus{
+button:focus, button{
     outline: none;
+    padding: unset;
 }
 
 a{

@@ -36,7 +36,7 @@ const workex = {
         company: 'Circuitstock',
         desc: [
             "Worked as head of Web Development at Circuitstock. Developed a web application for purchase of electronic components",
-            "Used Facebook API and PHP SDK 5.0 for user authentication.",
+            "Used Bootstrap for frontend and PHP for backend. All user and site data was stored in an SQL databse. Used Facebook API and PHP SDK 5.0 for user authentication.",
             "Implemented a loyalty point system which enabled a registered user to obtain points after a purchase and use these points to avail discounts on subsequent orders"
         ]
 
