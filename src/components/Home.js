@@ -80,7 +80,7 @@ class Home extends React.Component {
                     navDrawerOpen={this.state.navDrawerOpen}
                 />
 
-                <div className={this.state.navDrawerOpen ? 'freeze' : 'test'}>
+                <div className={this.state.navDrawerOpen ? 'freeze' : ''}>
 
                     <div className="left-text wow fadeIn" data-wow-delay="1900ms">
                         <a href="https://github.com/sahilverma2209" target="_blank" rel="noopener noreferrer" className="social-media-link"><i className="fab fa-github"></i></a>
@@ -96,7 +96,7 @@ class Home extends React.Component {
 
                     <div className={`landing-content-container ${this.state.navDrawerOpen ? 'freeze' : ''}`}>
                         <div className="landing-content">
-                            <div className="hi wow fadeInUp" data-wow-delay="900ms">Hi, my name is</div>
+                            <div className="hi wow fadeInUp" data-wow-delay="900ms">Hello World! My name is</div>
                             <div className="name wow fadeInUp" data-wow-delay="1100ms">Sahil Verma.</div>
                             <div className="build wow fadeInUp" data-wow-delay="1300ms">I build things for the web.</div>
                             <div className="bio wow fadeInUp" data-wow-delay="1500ms">

@@ -35,6 +35,7 @@ class WorkEx extends React.Component {
                     <div className="company">{`@ ${data.company}`}</div>
                 </div>
                 <div className="workex-date">{data.dates}</div><br/>
+                
 
                 <div className="workex-desc">
                     {data.desc.map(item =>

@@ -1,6 +1,7 @@
 const workex = {
     "NYU": {
         dates: 'Oct 2018 - Present',
+        duration: '1y',
         position: 'Senior Student Developer',
         company: 'Student Tech Innovation Team, NYU',
         desc: [
@@ -11,6 +12,7 @@ const workex = {
     },
     "Alisté": {
         dates: 'Dec 2016 – May 2018',
+        duration:'1y 6mos',
         position: 'New Product Engineer',
         company: 'Alisté Technology Pvt. Ltd.',
         desc: [
@@ -22,6 +24,7 @@ const workex = {
     },
     "NIC":{
         dates: 'Jun 2017',
+        duration: '1mos',
         position: 'Frontend Intern',
         company: 'National Informatics Center, India',
         desc: [
@@ -32,6 +35,7 @@ const workex = {
     },
     "Circuitstock": {
         dates: 'Jun 2016 – Dec 2016',
+        duration: '6 mos',
         position: 'Head of Web Development',
         company: 'Circuitstock',
         desc: [

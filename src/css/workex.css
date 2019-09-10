@@ -64,6 +64,12 @@
     padding: 5px;
 }
 
+.duration{
+    margin-left: 15px;
+    font-style: italic;
+    font-size: 12px;
+}
+
 .workex-desc{
     color: var(--main-super-fade-text);
     padding: 5px;
