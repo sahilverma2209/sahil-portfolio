@@ -38,7 +38,7 @@ const projects = [
                 link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
             },
             other: {
-                link: 'https://github.com/sahilverma2209/yelp-fusion-api-event-search'
+                link: 'http://signafire-round.s3-website-us-east-1.amazonaws.com/'
             }
         }
 
