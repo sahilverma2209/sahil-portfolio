@@ -60,7 +60,8 @@ class Home extends React.Component {
     }
 
     render(){
-        
+        var element = document.getElementById('about')
+        console.log(element);
         const isBigScreen = window.matchMedia(BIG_SCREEN).matches;
         // return !isBigScreen ? 
         //     <div className="under-construction">
