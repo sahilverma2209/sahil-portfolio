@@ -106,7 +106,7 @@ class Home extends React.Component {
                                 in building exceptional, high-quality websites and 
                                 applications.
                             </div>
-                            <a href="mailto:sahilverma@nyu.edu" className="get-in-touch wow fadeInUp" data-wow-delay="1700ms" onClick={this.function}>Get In Touch</a>
+                            <a href="mailto:sahilverma@nyu.edu"  target="_blank" rel="nofollow noopener noreferrer" className="get-in-touch wow fadeInUp" data-wow-delay="1700ms" onClick={this.function}>Get In Touch</a>
                         </div>
                     </div>
 
@@ -198,7 +198,7 @@ class Home extends React.Component {
                             <div className="whats-next"> 04. What's Next?</div>
                             <div className="get-in-touch2">Get In Touch</div>
                             <div className="contact-txt">I'm actively searching for full-time/part-time oppurtunities. Feel free to contact me for a project or just to say hi!</div>
-                            <div className="hello-container"><button className="say-hello">Say Hello</button></div>
+                            <div className="hello-container"><a  className="say-hello"  target="_blank" rel="nofollow noopener noreferrer" href="mailto:sv1727@nyu.edu">Say Hello</a></div>
                         </div>
 
                     </div>
