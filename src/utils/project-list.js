@@ -29,6 +29,22 @@ const projects = [
     },
 
     {
+        name: 'react-datetime-selector',
+        desc: 'NPM package for a simple easy to use Component which lets the user pick Date/Time through a visual interface',
+        tech: ['HTML/CSS', 'JS', 'React'],
+        img: 'datepicker',
+        links: {
+            git: {
+                link: 'https://github.com/sahilverma2209/react-datetime-selector'
+            },
+            other: {
+                link: 'https://www.npmjs.com/package/react-datetime-selector'
+            }
+        }
+
+    },
+
+    {
         name: 'SignaFireApp',
         desc: 'A simple responsive web application that fetches messages from SQL Lite databse and renders on the screen. User can search, trash and untrash a message',
         tech: ['HTML/CSS', 'JS', 'React', 'Axios', 'SQLite'],

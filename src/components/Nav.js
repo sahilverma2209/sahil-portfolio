@@ -5,10 +5,6 @@ import { changeTheme, BIG_SCREEN  } from '../utils/utils'
 
 class Nav extends React.Component {
 
-    constructor(){
-        super()
-    }
-
     render(){
         const isBigScreen = window.matchMedia(BIG_SCREEN).matches;
         const themeDrawerClass = this.props.themesOpen ? "themes-dropdown-open" : "themes-dropdown-close"
