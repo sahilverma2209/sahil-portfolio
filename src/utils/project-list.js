@@ -45,6 +45,22 @@ const projects = [
     },
 
     {
+        name: 'react-wheelpicker',
+        desc: 'NPM package for a simple easy to use Component which brings iOS-like wheel picker to the web!',
+        tech: ['HTML/CSS', 'JS', 'React'],
+        img: 'wheelpicker',
+        links: {
+            git: {
+                link: 'https://github.com/sahilverma2209/react-wheelpicker'
+            },
+            other: {
+                link: 'https://www.npmjs.com/package/react-wheelpicker'
+            }
+        }
+
+    },
+
+    {
         name: 'SignaFireApp',
         desc: 'A simple responsive web application that fetches messages from SQL Lite databse and renders on the screen. User can search, trash and untrash a message',
         tech: ['HTML/CSS', 'JS', 'React', 'Axios', 'SQLite'],
