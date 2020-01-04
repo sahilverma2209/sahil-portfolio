@@ -5,6 +5,7 @@ import projects from '../utils/project-list';
 import { changeTheme } from '../utils/utils'
 import { BIG_SCREEN } from "../utils/utils";
 import Nav from './Nav';
+
 class Home extends React.Component {
 
     constructor(){

@@ -75,7 +75,21 @@ const projects = [
         }
 
     },
+    {
+        name: 'JanBrownAssociates',
+        desc: 'Developed the official company website for Jan Brown Associates',
+        tech: ['HTML/CSS', 'JS', 'React', 'Node'],
+        img: 'jba',
+        links: {
+            git: {
+                link: 'http://www.adidevelopers.in/'
+            },
+            other: {
+                link: 'https://www.janbrownassociates.com/'
+            }
+        }
 
+    },
     {
         name: 'AdiDevelopers',
         desc: 'Developed the official company website for Adi Developers, Banglauru, India',
