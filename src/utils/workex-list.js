@@ -5,9 +5,13 @@ const workex = {
         position: 'Senior Student Developer',
         company: 'Student Tech Innovation Team, NYU',
         desc: [
-            "Responsible for designing and building web applications within the portfolio of NYU STIT",
-            "Develop and maintain campus-wide web applications, manage project progress, coordinate with other student developers. Technologies used include -HTML/CSS/JavaScript/React/Redux/Git",
-            "Current Project: Events Check-in(eventscheckin.nyu.edu) - A web application extensively used by NYU students and staff to collect check-in’s for various events held by different clubs and organizations. 200,000 + check-ins collected during Fall 2018 - 2019"
+            "Develop and maintain campus-wide web applications within the portfolio of NYU STIT, manage project progress and coordinate with other student developers.",
+            "Current Project: Events Check-in(eventscheckin.nyu.edu) - A web application extensively used by NYU students and staff to collect check-in’s for various events held by different clubs and organizations. 200,000 + check-ins collected during Fall 2018 - 2019",
+            "Revamped the entire UI consisting of 100+ components and added modals to show progress of bulk database operations.",
+            "Worked on accessibility testing and made the project WCAG 2.0 complaint.",
+            "Implemented the mobile view which in turn was used by the hybrid mobile app.",
+            "Removed multiple 3rd party library dependencies for styling",
+            "Enabled syncing of data from existing NYU services which led to increase in usage by 30%"
         ]
     },
     "Alisté": {
@@ -16,11 +20,12 @@ const workex = {
         position: 'New Product Engineer',
         company: 'Alisté Technology Pvt. Ltd.',
         desc: [
-            "Developed a home automation IOT project for an India based startup. It involved a NodeJS server hosted on AWS EB and used AWS Cognito for user authentication. The server handled HTTP and socket (socket.io) requests. ",
-            "Used MongoDB for saving user data generated through the mobile application.",
-            "Worked on Node MCU (esp8266) module and wrote a C program to connect it to the server and handle requests coming from a mobile application to switch a device ON or OFF."
+            "Developed a RESTful Node.js server and designed a MongoDB schema for storing the mobile-app generated user data.",
+            "Worked with the hardware and the mobile app team to successfully set up communication between NodeMCU (esp8266) Wi-Fi module, the server, and the mobile app. ",
+            "Developed schemes to handle offline requests which reduced response lag.",
+            "Improved the device onboarding procedure to enable syncing of multiple devices at once. ",
+            "Led a team of 3 people (including 1 designer) to build the company website - alistetechnologies.com, from scratch.",
         ]
-
     },
     "NIC":{
         dates: 'Jun 2017',
@@ -28,8 +33,8 @@ const workex = {
         position: 'Frontend Intern',
         company: 'National Informatics Center, India',
         desc: [
-            "Contributed to an ongoing utility mapping project.",
-            "Implemented ‘Layer Swipe’ feature via the JavaScript API of ArcGIS software",
+            "Worked with the ESRI's ArcGIS JavaScript API for a utility mapping project",
+            "Implemented layer swipe feature on the base map to switch between the following views - Satellite, Topo, Grayscale, Street.",
             "Also, worked on Calcite maps (a Bootstrap theme by ESRI) for front-end design"
         ]
     },
