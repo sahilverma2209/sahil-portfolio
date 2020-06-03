@@ -37,7 +37,7 @@ class Nav extends React.Component {
                     <a href="#workex" className="navlink wow fadeInDown" onClick={this.props.toggleNavDrawer} data-wow-delay="200ms"><div><span className="navlink-sno">02.</span>&nbsp;Experience</div></a>
                     <a href="#projects" className="navlink wow fadeInDown" onClick={this.props.toggleNavDrawer} data-wow-delay="400ms"><div><span className="navlink-sno">03.</span>&nbsp;Projects</div></a>
                     <a href="#contact" className="navlink wow fadeInDown" onClick={this.props.toggleNavDrawer} data-wow-delay="600ms"><div><span className="navlink-sno">04.</span>&nbsp;Contact</div></a>
-                    <a href={require("../assets/sahil_verma_resume.pdf")} target="_blank" rel="noopener noreferrer" className="navlink-resume wow fadeInDown" data-wow-delay="800ms">Resume</a>
+                    <a href="yolo" target="_blank" rel="noopener noreferrer" className="navlink-resume wow fadeInDown" data-wow-delay="800ms">Resume</a>
                     {isBigScreen &&
                     <div className="navlink theme-changer">
                         {/* {this.state.themesOpen &&  */}

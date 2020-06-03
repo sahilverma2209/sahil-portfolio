@@ -48,7 +48,6 @@ const workex = {
             "Used Bootstrap for frontend and PHP for backend. All user and site data was stored in an SQL databse. Used Facebook API and PHP SDK 5.0 for user authentication.",
             "Implemented a loyalty point system which enabled a registered user to obtain points after a purchase and use these points to avail discounts on subsequent orders"
         ]
-
     }
 }
 
