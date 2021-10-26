@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a1f9f72.chunk.css",
+    "main.js": "/static/js/main.9a39593e.chunk.js",
+    "main.js.map": "/static/js/main.9a39593e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.f0ee57a3.js",
+    "runtime~main.js.map": "/static/js/runtime~main.f0ee57a3.js.map",
+    "static/js/2.144046d4.chunk.js": "/static/js/2.144046d4.chunk.js",
+    "static/js/2.144046d4.chunk.js.map": "/static/js/2.144046d4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5367641d320ef6b0a2bd4c07b23e6203.js": "/precache-manifest.5367641d320ef6b0a2bd4c07b23e6203.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6a1f9f72.chunk.css.map": "/static/css/main.6a1f9f72.chunk.css.map",
+    "static/media/index.css": "/static/media/SFMono-Regular.7faa6660.woff2",
+    "static/media/adi.png": "/static/media/adi.eb23f13f.png",
+    "static/media/aliste.png": "/static/media/aliste.aa14b5cd.png",
+    "static/media/datepicker.png": "/static/media/datepicker.ad999cd6.png",
+    "static/media/git.png": "/static/media/git.4ec255d0.png",
+    "static/media/jba.png": "/static/media/jba.97557d4b.png",
+    "static/media/pagination.png": "/static/media/pagination.ce153a3f.png",
+    "static/media/sahil.jpeg": "/static/media/sahil.a54b35d5.jpeg",
+    "static/media/signa.png": "/static/media/signa.3e281097.png",
+    "static/media/vh.png": "/static/media/vh.6de3afc9.png",
+    "static/media/wheelpicker.png": "/static/media/wheelpicker.d356becf.png",
+    "static/media/yelp.png": "/static/media/yelp.54942e90.png"
+  }
+}
